@@ -1,4 +1,5 @@
-@charset "UTF-8";
+	
+	@charset "UTF-8";
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -10,19 +11,24 @@ body {
     padding: 3rem;
     position: relative;
     margin: 5rem auto 0 auto;
-    width: 30rem;
+    max-width: 500px;
+	background-color: #1B75BC;
+	border-radius: 1rem;
 }
 .mvp-carousel-wrapper {
     display: flex;
-    transition: transform .5s ease;
+    justify-content: center;
     position: relative;
+    transition: transform .5s ease;
+	
 }
 .mvp-card {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 15rem;
-    min-height: 15rem;
+    flex: 0 0 auto;
+	max-width: 300px;
+    min-height: 200px;
     position: relative;
     left: -100%;
     background-color: #1B75BC;
@@ -35,25 +41,27 @@ body {
     box-shadow: 0 0 2rem 0 #00000048;
     border-radius: 1rem;
     line-height: 1.5;
-	color: white;
+	color: black;
 }
 .mvp-card--bottom {
-    left: 5.5rem;
-    transform: scale(0.9) rotate(0);
-    z-index: 1;
+    left: 520px;  /* Slightly offset to the left */
+    transform: scale(0.80);
+    background-color: #7EB2E3;
 }
+
 .mvp-card--middle {
-    left: -7.5rem;
-    transform: scale(0.98) rotate(0);
-    z-index: 2;
+    left: 260px;  /* Slightly offset to the right */
+    transform: scale(0.90);
+    background-color: #C0DAFD;
 }
+
 .mvp-card--active {
-    transform: scale(1.1) rotate(0);
+    left: 0;
+    transform: scale(1);
     opacity: 1;
-    background-color: #1B75BC;
-    color: white;
+    background-color: white;
+    color: black;
     z-index: 3;
-    left: -20rem;
 }
 .isHidden {
     opacity: 0;
@@ -68,7 +76,7 @@ body {
     background: none;
     top: 50%;
     padding: 10px;
-    border: solid rgb(22, 32, 51);
+    border: solid rgb(255, 255, 255);
     border-width: 0 3px 3px 0;
     display: inline-block;
     cursor: pointer;
@@ -84,4 +92,5 @@ body {
 .mvp-carousel__source {
     text-align: center;
     font-size: 1rem;
+	padding-top: 10px;
 }
