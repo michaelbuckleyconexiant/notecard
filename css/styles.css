@@ -35,24 +35,25 @@ body {
     box-shadow: 0 0 2rem 0 #00000048;
     border-radius: 1rem;
     line-height: 1.5;
+	color: white;
 }
 .mvp-card--bottom {
-    left: 1.8rem;
+    left: 5.5rem;
     transform: scale(0.9) rotate(0);
     z-index: 1;
 }
 .mvp-card--middle {
-    left: -8.5rem;
+    left: -7.5rem;
     transform: scale(0.98) rotate(0);
     z-index: 2;
 }
 .mvp-card--active {
     transform: scale(1.1) rotate(0);
     opacity: 1;
-    background-color: #183453;
+    background-color: #1B75BC;
     color: white;
     z-index: 3;
-    left: -18.5rem;
+    left: -20rem;
 }
 .isHidden {
     opacity: 0;
