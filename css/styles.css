@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+}
+.mvp-carousel {
+    overflow: hidden;
+    padding: 3rem;
+    position: relative;
+    margin: 5rem auto 0 auto;
+    width: 30rem;
+}
+.mvp-carousel-wrapper {
+    display: flex;
+    transition: transform .5s ease;
+    position: relative;
+}
+.mvp-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 15rem;
+    min-height: 15rem;
+    position: relative;
+    left: -100%;
+    background-color: #1B75BC;
+    box-sizing: border-box;
+    padding: 2rem;
+    font-size: 1rem;
+    text-align: left;
+    transition: opacity .6s, background 1.2s, transform .8s, left .5s;
+    transform: scale(.75) rotate(5deg);
+    box-shadow: 0 0 2rem 0 #00000048;
+    border-radius: 1rem;
+    line-height: 1.5;
+}
+.mvp-card--bottom {
+    left: 1.8rem;
+    transform: scale(0.9) rotate(0);
+    z-index: 1;
+}
+.mvp-card--middle {
+    left: -8.5rem;
+    transform: scale(0.98) rotate(0);
+    z-index: 2;
+}
+.mvp-card--active {
+    transform: scale(1.1) rotate(0);
+    opacity: 1;
+    background-color: #183453;
+    color: white;
+    z-index: 3;
+    left: -18.5rem;
+}
+.isHidden {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+.z-index-high {
+    z-index: 6;
+}
+.mvp-carousel__prevBtn, .mvp-carousel__nextBtn {
+    position: absolute;
+    background: none;
+    top: 50%;
+    padding: 10px;
+    border: solid rgb(22, 32, 51);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    cursor: pointer;
+}
+.mvp-carousel__nextBtn {
+    left: 1.5rem;
+    transform: rotate(135deg);
+}
+.mvp-carousel__prevBtn {
+    right: 1.5rem;
+    transform: rotate(-45deg);
+}
+.mvp-carousel__source {
+    text-align: center;
+    font-size: 1rem;
+}
