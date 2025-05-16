@@ -1,4 +1,4 @@
-	
+
 	@charset "UTF-8";
 /* CSS Document */
 
@@ -18,9 +18,7 @@ body {
 .mvp-carousel-wrapper {
     display: flex;
     justify-content: center;
-    position: relative;
     transition: transform .5s ease;
-	
 }
 .mvp-card {
     display: flex;
