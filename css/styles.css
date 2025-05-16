@@ -31,14 +31,14 @@ body {
     min-height: 200px;
     position: relative;
     left: -100%;
-    background-color: #E4EAF3;
+    background-color: #ffffff;
     box-sizing: border-box;
     padding: 2rem;
     font-size: 1rem;
     text-align: left;
     transition: opacity .6s, background 1.2s, transform .8s, left .5s;
     transform: scale(.75) rotate(5deg);
-    box-shadow: 0 0 2rem 0 #00000048;
+/*    box-shadow: 0 0 2rem 0 #00000048;*/
     border-radius: 1rem;
     line-height: 1.5;
 	color: #114A77;
@@ -46,11 +46,13 @@ body {
 .mvp-card--bottom {
     left: 520px;  /* Slightly offset to the left */
     transform: scale(0.80);
+	background-color: #dde1e5;
 }
 
 .mvp-card--middle {
     left: 260px;  /* Slightly offset to the right */
     transform: scale(0.90);
+	background-color: #c5ccd4;
 }
 
 .mvp-card--active {
