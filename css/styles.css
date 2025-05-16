@@ -41,7 +41,7 @@ body {
     /* box-shadow: 0 0 2rem 0 #00000048; */
     border-radius: 1rem;
     line-height: 1.5;
-	color: #114A77;
+    color: white;
 }
 .mvp-card--bottom {
     left: 520px;  /* Slightly offset to the left */
