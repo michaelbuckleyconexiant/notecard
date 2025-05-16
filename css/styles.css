@@ -31,7 +31,7 @@ body {
     min-height: 200px;
     position: relative;
     left: -100%;
-    background-color: #ffffff;
+    background-color: #E4EAF3;
     box-sizing: border-box;
     padding: 2rem;
     font-size: 1rem;
@@ -41,25 +41,23 @@ body {
     box-shadow: 0 0 2rem 0 #00000048;
     border-radius: 1rem;
     line-height: 1.5;
-	color: white;
+	color: #114A77;
 }
 .mvp-card--bottom {
     left: 520px;  /* Slightly offset to the left */
     transform: scale(0.80);
-    background-color: #1B75BC;
 }
 
 .mvp-card--middle {
     left: 260px;  /* Slightly offset to the right */
     transform: scale(0.90);
-    background-color: #1B75BC;
 }
 
 .mvp-card--active {
     left: 0;
     transform: scale(1);
     opacity: 1;
-    background-color: #1B75BC;
+    background-color: #114A77;
     color: white;
     z-index: 3;
 }
