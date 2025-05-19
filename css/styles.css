@@ -12,13 +12,14 @@ body {
     position: relative;
     margin: 5rem auto 0 auto;
     max-width: 450px;
-/*	background-color: #1B75BC;*/
 	border-radius: 1rem;
 }
 .mvp-carousel-wrapper {
     display: flex;
     justify-content: center;
     transition: transform .5s ease;
+    margin: 0 auto;
+    padding-left: 50px;
 }
 .mvp-card {
     display: flex;
@@ -92,5 +93,4 @@ body {
 .mvp-carousel__source {
     text-align: center;
     font-size: 1rem;
-	padding-top: 10px;
 }
